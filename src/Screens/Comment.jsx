@@ -12,6 +12,7 @@ import moment from 'moment'
 import CommentForm from '../Components/CommentForm'
 import CommentList from '../Components/CommentList'
 // import 'emoji-mart/css/emoji-mart.css'
+import DrawerComponent from '../Components/DrawerComponent'
 
 const Comment = () => {
   const [userData, setuserData] = useRecoilState(userInfo)
@@ -107,18 +108,8 @@ const Comment = () => {
 
         {/* hero section */}
         <header id='comment-hero'>
-          <div className='hero-icons'>
-            <div id='drawer'>
-              <a href='#'>
-                <img src='./assets/images/cart-icon.svg' alt='cart' />
-              </a>
-            </div>
-            <div className='hamburger' id='hamburger-1'>
-              <span className='line' />
-              <span className='line' />
-              <span className='line' />
-            </div>
-          </div>
+        <DrawerComponent/>
+
           <h1>Start Comments</h1>
         </header>
         {/* comment start section */}

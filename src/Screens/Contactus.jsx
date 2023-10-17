@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Components/Header'
+import DrawerComponent from '../Components/DrawerComponent'
 
 const Contactus = () => {
   return (
@@ -9,18 +10,8 @@ const Contactus = () => {
 
         {/* hero section */}
         <header id='contact-hero'>
-          <div className='hero-icons'>
-            <div id='drawer'>
-              <a href='#'>
-                <img src='./assets/images/cart-icon.svg' alt='cart' />
-              </a>
-            </div>
-            <div className='hamburger' id='hamburger-1'>
-              <span className='line' />
-              <span className='line' />
-              <span className='line' />
-            </div>
-          </div>
+        <DrawerComponent/>
+
           <h1>Contact Us</h1>
         </header>
         {/* contact-us section */}

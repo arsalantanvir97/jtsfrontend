@@ -3,13 +3,13 @@ import axios from 'axios'
 export let baseURL
 export let imageURL
 
-if (window.location.hostname == 'localhost') {
-  baseURL = 'http://localhost:5000/api'
-  imageURL = 'http://localhost:5000/'
-} else {
+// if (window.location.hostname == 'localhost') {
+//   baseURL = 'http://localhost:5000/api'
+//   imageURL = 'http://localhost:5000/'
+// } else {
   baseURL = 'https://dedicatedtestserver.com:8099/api'
   imageURL = 'https://dedicatedtestserver.com:8099/'
-}
+// }
 
 let api = axios.create({
   baseURL,

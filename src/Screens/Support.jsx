@@ -12,6 +12,7 @@ import moment from 'moment'
 import CommentForm from '../Components/CommentForm'
 import CommentList from '../Components/CommentList'
 // import 'emoji-mart/css/emoji-mart.css'
+import DrawerComponent from '../Components/DrawerComponent'
 
 const Support = () => {
   const [userData, setuserData] = useRecoilState(userInfo)
@@ -111,18 +112,8 @@ const Support = () => {
 
         {/* hero section */}
         <header id='support-hero'>
-          <div className='hero-icons'>
-            <div id='drawer'>
-              <a href='#'>
-                <img src='./assets/images/cart-icon.svg' alt='cart' />
-              </a>
-            </div>
-            <div className='hamburger' id='hamburger-1'>
-              <span className='line' />
-              <span className='line' />
-              <span className='line' />
-            </div>
-          </div>
+          <DrawerComponent/>
+
           <h1>Support Local People / Business</h1>
         </header>
         {/* support section */}

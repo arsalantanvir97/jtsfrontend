@@ -59,9 +59,9 @@ const Home = ({ history }) => {
               )}
             </Link>
             <div id='drawer'>
-              <a href='#'>
+              <Link to='#'>
                 <img src='./assets/images/cart-icon.svg' alt='cart' />
-              </a>
+              </Link>
             </div>
             <div className='hamburger' id='hamburger-1'>
               <span className='line' />

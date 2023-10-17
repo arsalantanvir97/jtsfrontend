@@ -33,7 +33,7 @@ const App = () => {
         <Route path='/ForgotPassword' component={ForgotPassword} exact />
         <Route path='/NewPassword' component={NewPassword} exact />
         <Route path='/Merchandise' component={Merchandise} exact />
-        <Route path='/News' component={News} exact />
+        <PrivateRoute path='/News' component={News} exact />
         <Route path='/Signup' component={Signup} exact />
         <Route path='/SingleProduct' component={SingleProduct} exact />
         <PrivateRoute path='/Support' component={Support} exact />
